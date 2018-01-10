@@ -52,6 +52,25 @@ public class Exercise8 {
 		}
 		return tich;
 	}
+	public void findEleMax(int mt[][], int h, int c){
+		int max =mt[0][0];
+		int a[] = new int[h];
+		for (int i = 0; i < h; i++) {
+			for (int j = 0; j < c; j++) {
+				//System.out.print(" "+mt[i][j]);				
+				if(max<mt[i][j]){
+					max = mt[i][j];
+				}				
+			}
+			//System.out.println("Ele max: "+max);
+			a[i] = max;			
+			System.out.println();
+		}
+		System.out.println("Array after find max: ");
+		for (int j = 0; j < a.length; j++) {
+			System.out.print(" "+a[j]);
+		}
+	}
 	
 	
 	public static void main(String[] args) {
@@ -72,6 +91,10 @@ public class Exercise8 {
 		System.out.println("Row 2: ");
 		double resultb= e8.outMatrixRow2(mt, h, c);
 		System.out.println(resultb);
+		
+		System.out.println("Max: ");
+		e8.findEleMax(mt, h, c);
+		
 		
 		
 	}
