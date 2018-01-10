@@ -63,7 +63,8 @@ public class Exercise8 {
 				}				
 			}
 			//System.out.println("Ele max: "+max);
-			a[i] = max;			
+			a[i] = max;	
+			max =mt[i][0];
 			System.out.println();
 		}
 		System.out.println("Array after find max: ");
