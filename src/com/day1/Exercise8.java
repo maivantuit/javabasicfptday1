@@ -56,6 +56,7 @@ public class Exercise8 {
 		int max =mt[0][0];
 		int a[] = new int[h];
 		for (int i = 0; i < h; i++) {
+			max =mt[i][0];  // gan result for element the first row.
 			for (int j = 0; j < c; j++) {
 				//System.out.print(" "+mt[i][j]);				
 				if(max<mt[i][j]){
@@ -64,7 +65,7 @@ public class Exercise8 {
 			}
 			//System.out.println("Ele max: "+max);
 			a[i] = max;	
-			max =mt[i][0];  // gan result for element the first row.
+			
 			System.out.println();
 		}
 		System.out.println("Array after find max: ");
